@@ -1,0 +1,149 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.tanu{
+    height: 700px;
+    width: 450px;
+    background-color: rgb(6, 6, 42);
+    margin-top: 80px;
+    /* border: 5px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 55px; */
+    
+}
+
+.tanu h1{
+    font-size: 35px;
+    color: rgb(2,0,36);
+    background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(230,230,244,1) 0%, rgba(7,198,246,1) 0%, rgba(3,197,245,1) 50%, rgba(234,239,240,1) 83%);
+}
+
+.box{
+    height: 550px;
+    width: 340px;
+    background-color: rgb(6, 6, 42);
+    /* margin-top: 100px; */
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+}
+
+.box1{
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    border-radius: 5px;
+    animation: rotate 3s linear infinite;
+}
+
+.box2{
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    border-radius: 5px;
+    animation: pop 2s infinite;
+
+}
+
+.box3{
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    border-radius: 5px;
+    animation: slide 2s infinite;
+}
+
+.box4{
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    border-radius: 5px;
+    animation: push 2s infinite;
+}
+
+.box5{
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    border-radius: 5px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes rotate{
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pop{
+
+    0%, 100%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.2);
+    }
+}
+
+@keyframes slide{
+
+    0%{
+        transform: translateX(-50%);
+    }
+    
+    50%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(50%);
+    }
+}
+
+@keyframes push{
+
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 5; 
+      }
+
+    100%{
+        opacity: 0;
+        }
+}
+
+@keyframes bounce{
+
+    0%{
+        transform: translateY(0);
+    }
+    
+    40%{
+        transform: translateY(-20px);
+    }
+
+    60%{
+        transform: translateY(-10px);
+    }
+
+}
